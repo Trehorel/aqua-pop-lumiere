@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AquaPop – Le site de la natation</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="blobs"><i></i><i></i><i></i></div>
+
+<header>
+  <a class="logo" href="#accueil">🌊 Aqua<span>Pop</span></a>
+  <button class="burger" aria-label="Menu">☰</button>
+  <nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#apropos">À propos</a>
+    <a href="#galerie">Galerie</a>
+    <a href="#nages">Les 4 nages</a>
+    <a href="#disciplines">Disciplines</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <!-- ACCUEIL -->
+  <section class="page" id="accueil">
+    <div class="hero">
+      <p class="tag reveal">🏊 Bienvenue dans le bassin</p>
+      <h1 class="reveal">Plonge dans l'univers de la <em>natation</em></h1>
+      <p class="lead reveal">Vitesse, glisse, technique et plaisir : découvre tout ce qui fait vibrer le monde de l'eau.</p>
+      <a class="btn reveal" href="#nages">Découvrir les nages</a>
+    </div>
+    <div class="marquee"><div>NAGE • GLISSE • PLONGE • RESPIRE • VISE LE MUR • NAGE • GLISSE • PLONGE • RESPIRE • VISE LE MUR •</div></div>
+    <div class="grid stats">
+      <div class="card reveal"><b data-count="50">0</b><span>mètres, la longueur d'un grand bassin</span></div>
+      <div class="card reveal"><b data-count="4">0</b><span>nages en compétition</span></div>
+      <div class="card reveal"><b data-count="8">0</b><span>lignes d'eau en finale</span></div>
+    </div>
+  </section>
+
+  <!-- A PROPOS -->
+  <section class="page" id="apropos">
+    <h2 class="reveal">À propos</h2>
+    <div class="grid two">
+      <div class="card reveal"><h3>Notre histoire</h3><p>AquaPop est né d'une passion : celle de l'eau. Notre but est de rendre la natation lumineuse, accessible et joyeuse pour tout le monde.</p></div>
+      <div class="card reveal"><h3>Notre mission</h3><p>Partager la culture de la natation : des premiers « flottements » aux grandes compétitions, en passant par les astuces de nage.</p></div>
+    </div>
+    <div class="lanes"></div>
+  </section>
+
+  <!-- GALERIE -->
+  <section class="page" id="galerie">
+    <h2 class="reveal">Galerie</h2>
+    <p class="lead reveal">Clique sur une tuile pour l'agrandir. Remplace-les par tes vraies photos quand tu veux.</p>
+    <div class="mosaic">
+      <figure class="tile t1 reveal" data-cap="Le plongeon parfait">🤿</figure>
+      <figure class="tile t2 reveal" data-cap="Lignes d'eau">🏊</figure>
+      <figure class="tile t3 reveal" data-cap="Éclaboussures">💦</figure>
+      <figure class="tile t4 reveal" data-cap="Départ !">🏁</figure>
+      <figure class="tile t5 reveal" data-cap="Le podium">🥇</figure>
+      <figure class="tile t6 reveal" data-cap="Sous l'eau">🫧</figure>
+    </div>
+  </section>
+
+  <!-- NAGES -->
+  <section class="page" id="nages">
+    <h2 class="reveal">Les 4 nages</h2>
+    <div class="grid four">
+      <div class="card reveal"><span class="ico">🦋</span><h3>Papillon</h3><p>Puissante et spectaculaire : les deux bras passent ensemble au-dessus de l'eau.</p></div>
+      <div class="card reveal"><span class="ico">🏊</span><h3>Crawl</h3><p>La plus rapide. Battements de jambes et bras en alternance.</p></div>
+      <div class="card reveal"><span class="ico">🐸</span><h3>Brasse</h3><p>Technique et rythmée, avec un mouvement de jambes en « fouet ».</p></div>
+      <div class="card reveal"><span class="ico">🔙</span><h3>Dos crawlé</h3><p>Sur le dos, regard vers le plafond, bras en moulinet.</p></div>
+    </div>
+  </section>
+
+  <!-- DISCIPLINES -->
+  <section class="page" id="disciplines">
+    <h2 class="reveal">Disciplines</h2>
+    <div class="grid three">
+      <div class="card reveal"><span class="ico">💃</span><h3>Natation artistique</h3><p>Danse, synchronisation et acrobaties dans l'eau.</p></div>
+      <div class="card reveal"><span class="ico">🤽</span><h3>Water-polo</h3><p>Sport d'équipe intense : passes, tirs et endurance.</p></div>
+      <div class="card reveal"><span class="ico">🪂</span><h3>Plongeon</h3><p>Sauts, vrilles et entrées dans l'eau millimétrées.</p></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="page" id="contact">
+    <h2 class="reveal">Contact</h2>
+    <div class="card reveal contact">
+      <p>Une question, une idée ? Écris-nous :</p>
+      <a class="btn" href="mailto:contact@aquapop.fr">contact@aquapop.fr</a>
+    </div>
+  </section>
+</main>
+
+<footer>© 2026 AquaPop – Fait avec 💙 pour les passionnés d'eau</footer>
+<div class="lightbox" id="lb"><div><span id="lbIco"></span><p id="lbCap"></p></div></div>
+<script src="script.js"></script>
+</body>
+</html>
