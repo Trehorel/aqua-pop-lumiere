@@ -40,7 +40,6 @@ document.addEventListener('click', e => {
 const lb = document.getElementById('lb');
 document.querySelectorAll('.tile').forEach(t => t.onclick = e => {
   e.stopPropagation();
-  document.getElementById('lbIco').textContent = t.textContent;
   document.getElementById('lbCap').textContent = t.dataset.cap;
   lb.classList.add('open');
 });
